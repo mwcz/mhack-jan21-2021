@@ -1,0 +1,18 @@
+{
+  "name": "jan-21-2021",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/three": "^0.136.1",
+    "esbuild": "0.14.11",
+    "swank": "1.4.1",
+    "three": "0.136.0"
+  },
+  "scripts": {
+    "start": "esbuild main.ts --servedir=.",
+    "build": "esbuild main.ts --platform=browser --splitting --target=esnext --format=esm --bundle --minify --sourcemap=inline --outdir=dist",
+    "watch": "esbuild main.ts --platform=browser --splitting --target=esnext --format=esm --bundle --sourcemap=inline --outdir=dist --watch"
+  }
+}

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html data-theme=dark>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Mhack Jan 21, satisfying button</title>
+        <link rel="stylesheet" href="pico.classless.min.css">
+        <style type="text/css" media="screen">
+            button {
+                width: auto;
+                font-weight: bold;
+                transition: transform ease-out 0.08s, background-color ease-out 0.12s;
+            }
+            button:hover {
+                background-color: var( --primary-hover);
+            }
+            button:active {
+                transform: scale(0.99);
+                background-color: var( --primary-focus);
+            }
+            canvas {
+                user-select: none;
+                pointer-events: none;
+            }
+        </style>
+        <script type="module" src="dist/main.js"></script>
+    </head>
+    <body>
+
+
+
+        <!-- Nav -->
+        <nav class="container-fluid">
+            <ul>
+                <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>Satisfying Save Button</strong></a></li>
+            </ul>
+        </nav><!-- ./ Nav -->
+
+        <!-- Main -->
+        <main class="container">
+            <article class="grid">
+                <div>
+                    <hgroup>
+                    <h1>A Pleasant Form</h1>
+                    <h2>Mindfulness is the path to mindfulness.</h2>
+                    </hgroup>
+                    <form>
+                        <input type="text" name="login" placeholder="Notice your next thought, then let it go." aria-label="Login" autocomplete="nickname" required="">
+                        <!-- <input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required=""> -->
+                        <!-- <fieldset> -->
+                        <!--     <label for="remember"> -->
+                        <!--         <input type="checkbox" role="switch" id="remember" name="remember"> -->
+                        <!--         Remember me -->
+                        <!--     </label> -->
+                        <!-- </fieldset> -->
+                        <button type="submit" onclick="event.preventDefault()">
+                            <span class="save-label">Save</span>
+                            <span class="save-label"></span>
+                        </button>
+                    </form>
+                </div>
+                <div></div>
+            </article>
+        </main><!-- ./ Main -->
+
+        <!-- Footer -->
+        <footer class="container-fluid">
+            <small>Built with <a class="secondary" href="https://threejs.org/">three.js</a> and <a class="secondary" href="https://picocss.com">Pico</a>.</small>
+            <small><a class="secondary" href="https://skfb.ly/6XnUu">"Floppy Disk"</a> by Nyangire is licensed under <a class="secondary" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a>.</small>
+        </footer><!-- ./ Footer -->
+
+    </body>
+</html>
+
